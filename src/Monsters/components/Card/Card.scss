@@ -1,14 +1,20 @@
 .card {
-  width: 250px;
-  height: 330px;
-  border-radius: 30px;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
 
-  h2 {
-    margin-top: 20px;
+  &:hover {
+    transform: scale(1.03);
   }
 
-  p {
-    margin-top: 10px;
+  .monsterImage {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
   }
 }
